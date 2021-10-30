@@ -1,0 +1,286 @@
+/*
+*  html5resetcss
+*/
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent
+}
+
+body {
+    line-height: 1
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block
+}
+
+nav ul {
+    list-style: none
+}
+
+blockquote,
+q {
+    quotes: none
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: none
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent
+}
+
+ins {
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none
+}
+
+mark {
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold
+}
+
+del {
+    text-decoration: line-through
+}
+
+abbr[title],
+dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0
+}
+
+input,
+select {
+    vertical-align: middle
+}
+
+
+/* 全体 */
+
+
+/* ヘッダー */
+
+nav {
+    margin: 0 auto;
+}
+
+.nav-main {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-main>li+li {
+    margin-left: 20px;
+}
+
+
+/* メインビジュアル */
+
+body {
+    margin: 0px;
+}
+
+.colour-block {
+    background: #369A7E;
+    width: 60%;
+    padding: 7% 20% 10% 20%;
+    color: #fff;
+}
+
+.white-block {
+    background: #fff;
+    width: 60%;
+    padding: 7% 20% 10% 20%;
+    color: #369A7E;
+}
+
+h1 {
+    text-align: center;
+    font-size: 80px;
+    font-family: 'wire one', serif;
+    font-weight: normal;
+}
+
+p {
+    font-size: 20px;
+    font-family: 'Raleway', serif;
+}
+
+
+/*----------------*/
+/*  SCALLOP down  */
+/*----------------*/
+
+.container {
+    position: relative;
+    background: white;
+    padding: 50px;
+}
+
+.container p::after {
+    position: absolute;
+    bottom: -50px;
+    left: 0px;
+    width: 100%;
+    content: " ";
+    /*center top  */
+    background: radial-gradient(circle at 50% 0%, white 25%, gray 26%);
+    background-color: gray;
+    background-size: 50px 100px;
+    height: 50px;
+    background-repeat: repeat-x;
+}
+
+.container ::before {
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    content: " ";
+    background: radial-gradient(circle at 50% 50%, white 50%, gray 40%);
+    background-color: gray;
+    background-size: 50px 100px;
+    height: 50px;
+    background-repeat: repeat-x;
+}
+
+.next-container {
+    background: gray;
+    padding: 50px;
+    margin-bottom: 50px;
+}
+
+
+.main-visual{    position: relative;}
+
+.topScallope {
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    background-repeat: repeat-x;
+      height: 100px;
+      background: radial-gradient(circle at 50% 0%, red 26px, yellow 27px, transparent 50%);
+      background-size: 50px 100px;
+  }
+  
+
+.mainphoto {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* フッター */
+
+footer {
+    text-align: center;
+}
