@@ -216,6 +216,14 @@ p {
     font-family: 'Raleway', serif;
 }
 
+/* メインコンテンツ */
+
+.section-inner{
+    padding: 90px 10px 110px;
+}
+.section-inner h2{
+text-align: center;margin-bottom: 30px;
+}
 
 /*----------------*/
 /*  SCALLOP down  */
