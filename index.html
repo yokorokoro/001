@@ -7,23 +7,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/main.js"></script>
+
     <title>きのめ保育園</title>
 </head>
 
 <body>
-
+    <button type="button" class="btn-menu">
+        <span class="btn-menu-lines"></span></button>
     <header>
-        <h1><img src="./images/h1_logo.gif"></h1>
+        <div class="logo"><a href="index.html"><img src="./images/h1_logo.gif"></a></div>
         <nav>
             <ul class="nav-main">
-                <li class="nav-top">TOP</li>
-                <li class="nav-about">きのめ保育園について</li>
-                <li class="nav-flow">一日の流れ</li>
-                <li class="nav-price">料金</li>
+                <li class="nav-top"><a href="index.html">TOP</a></li>
+                <li class="nav-about"><a href="about.html">きのめ保育園について</a></li>
+                <li class="nav-flow"><a href="./">一日の流れ</a></li>
+                <li class="nav-price"><a href="./">料金</a></li>
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="top">
         <section id="main-visual" class="main-visual">
             <!-- ５００PXになったら１枚ずつ表示 -->
             <div class="news">
@@ -37,7 +40,11 @@
                     </li>
                 </ul>
             </div>
-            <div class="ScallopWrap">
+            <div class="ScallopWrap ">
+
+                <div class="loop_wrap">
+                    <img src="./images/main_photo_04.jpg"><img src="./images/main_photo_04.jpg">
+                </div>
                 <ul class="photo-wrap">
                     <li class="photoBkg01"><img src="./images/main_icon_01.png"></li>
                     <li class="photoBkg02"><img src="./images/main_icon_02.png"></li>
@@ -55,7 +62,7 @@
                 <ul class="about-list">
                     <li>
                         <figure><img src="./images/About_gaiyo.gif"></figure>
-                        <p class="linkText">保育園の概要</p>
+                        <p class="linkText"><a href="about.html">保育園の概要</a></p>
                     </li>
                     <li>
                         <figure><img src="./images/About_policy.gif"></figure>
