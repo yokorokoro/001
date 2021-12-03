@@ -842,6 +842,11 @@ nav {
 }
 
 /* 下層 */
+.current {
+  padding-left: 24px;
+  margin-top: 2px;
+}
+
 .lower {
   /* 下層_保育園の概要 */
   /* 下層_保育理念・保育方針・保育目標 */
@@ -921,6 +926,10 @@ nav {
   padding: 1px 0px 0px 25px;
   background: url(../images/icon_arrow.gif) no-repeat 0% 0%/16px;
   line-height: 130%;
+}
+
+.lower .About-hoshin p a:hover {
+  color: #61ba5a;
 }
 
 .lower .About-flow ul li {

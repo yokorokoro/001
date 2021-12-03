@@ -760,6 +760,11 @@ nav {
 
 /* 下層 */
 
+.current {
+    padding-left: 24px;
+    margin-top: 2px;
+}
+
 .lower {
     section {
         margin-bottom: 50px;
@@ -831,6 +836,11 @@ nav {
             padding: 1px 0px 0px 25px;
             background: url(../images/icon_arrow.gif) no-repeat 0% 0%/16px;
             line-height: 130%;
+            a {
+                &:hover {
+                    color: $green;
+                }
+            }
         }
     }
     /* 下層_入園決定までの流れ */
