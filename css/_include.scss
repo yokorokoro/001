@@ -1,0 +1,44 @@
+    @mixin ScallopWrapA($height, $bottom) {
+        position: absolute;
+        content: " ";
+        left: 0px;
+        right: 0;
+        bottom: $bottom;
+        width: 100%;
+        margin: 0 auto;
+        background-repeat: repeat-x;
+        height: $height;
+        background-size: 30px 100px;
+    }
+    
+    @mixin ScallopWrapB($height) {
+        position: absolute;
+        content: " ";
+        left: 0px;
+        right: 0;
+        top: 0;
+        width: 100%;
+        margin: 0 auto;
+        background-repeat: repeat-x;
+        height: $height;
+        background-size: 30px 100px;
+    }
+    
+    @mixin figure($bkgColor) {
+        border-radius: 50%;
+        background-color: $bkgColor;
+        width: 240px;
+        height: 240px;
+        text-align: center;
+        position: relative;
+    }
+    
+    @mixin step($content) {
+        content: $content;
+        border-radius: 5px;
+        background-color: #e95563;
+        color: #fff;
+        font-weight: bold;
+        padding: 10px 25px;
+        display: inline-block;
+    }
