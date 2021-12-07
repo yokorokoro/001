@@ -182,7 +182,7 @@ $green:#61ba5a;
 
 /*レスポンシブ */
 
-$breakpoints: (sp: 768px, tb: 1100px);
+$breakpoints: (sp: 845px, tb: 1100px);
 @mixin sp {
     @media only screen and (max-width: map-get($breakpoints, sp)) {
         @content;
@@ -408,7 +408,7 @@ nav {
     background-color: #fff;
     margin: 0 auto;
     display: flex;
-    >p {
+    >h2 {
         &::before {
             content: "";
             display: inline-block;
@@ -420,7 +420,7 @@ nav {
             background: url(../images/nav_top.gif) no-repeat 10% 46% /26px;
         }
     }
-    >p {
+    >h2 {
         max-width: 155px;
         width: 100%;
         font-size: 16px;
@@ -446,6 +446,9 @@ nav {
         display: block;
         z-index: 1;
         width: 90%;
+        >h2 {
+            margin:10px auto 0px;
+        }
         >p {
             display: block;
             text-align: center;
@@ -564,7 +567,7 @@ nav {
     padding: 0px 10px 0px;
     max-width: 1400px;
     margin: 0 auto;
-    .linkText {
+    .link-text {
         >a {
             &:hover {
                 color: $green;
@@ -617,7 +620,11 @@ nav {
     position: relative;
     padding-top: 70px;
     .section-inner {
-        background: url(../images/About_bkg.gif) no-repeat center top/70%;
+        background: url(../images/About_bkg01.gif) ,url(../images/About_bkg02.gif);
+        background-repeat: no-repeat,no-repeat;
+        background-position: center top,center bottom 8%;
+        background-size: contain;
+        background-size: 70%,70%;
         figure {
             @include figure(#fff)
         }
@@ -648,8 +655,6 @@ nav {
     }
     @include tb {
         .section-inner figure {
-            width: 160px;
-            height: 160px;
             margin: 0 auto;
         }
     }
@@ -665,6 +670,7 @@ nav {
     padding: 95px 0px 20px;
     .section-inner {
         background: url(../images/flow_bkg.gif) no-repeat center top/70% content-box;
+        background-size: contain;
         figure {
             @include figure(#fff4ea)
         }
@@ -697,8 +703,6 @@ nav {
     }
     @include tb {
         .section-inner figure {
-            width: 160px;
-            height: 160px;
             margin: 0 auto;
         }
     }
@@ -715,6 +719,7 @@ nav {
     padding-top: 70px;
     .section-inner {
         background: url(../images/Price_bkg.gif) no-repeat center top/70% content-box;
+        background-size: contain;
         figure {
             @include figure(#fff)
         }
@@ -762,7 +767,7 @@ nav {
     }
 }
 
-.linkText {
+.link-text {
     text-align: center;
     margin-top: 20px;
     font-weight: bold;

@@ -26,7 +26,7 @@ $(function() {
 
         // ウィンドウリサイズ時の処理
         $win.on('resize', function() {
-            if ($win.width() > 768) {
+            if ($win.width() > 845) {
                 $nav.show();
                 $btnMenu.removeClass(isOpen).removeClass(isAnimate);
             } else {

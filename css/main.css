@@ -211,7 +211,7 @@ nav.fixed {
   background-color: #fff;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 845px) {
   nav {
     height: 100vh;
     display: none;
@@ -266,7 +266,7 @@ nav.fixed {
   width: 19px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 845px) {
   .nav-main {
     flex-direction: column;
     height: 100%;
@@ -392,7 +392,7 @@ nav.fixed {
   display: flex;
 }
 
-.news > p::before {
+.news > h2::before {
   content: "";
   display: inline-block;
   width: 26px;
@@ -403,7 +403,7 @@ nav.fixed {
   background: url(../images/nav_top.gif) no-repeat 10% 46%/26px;
 }
 
-.news > p {
+.news > h2 {
   max-width: 155px;
   width: 100%;
   font-size: 16px;
@@ -434,6 +434,9 @@ nav.fixed {
     display: block;
     z-index: 1;
     width: 90%;
+  }
+  .news > h2 {
+    margin: 10px auto 0px;
   }
   .news > p {
     display: block;
@@ -488,7 +491,7 @@ nav.fixed {
   left: 9%;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 845px) {
   .photo-wrap .photoBkg01 {
     display: none;
   }
@@ -504,7 +507,7 @@ nav.fixed {
   left: 37%;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 845px) {
   .photo-wrap .photoBkg02 {
     display: none;
   }
@@ -520,7 +523,7 @@ nav.fixed {
   right: 6%;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 845px) {
   .photo-wrap .photoBkg03 {
     display: none;
   }
@@ -591,7 +594,7 @@ nav.fixed {
   margin: 0 auto;
 }
 
-.section-inner .linkText > a:hover {
+.section-inner .link-text > a:hover {
   color: #61ba5a;
 }
 
@@ -634,7 +637,11 @@ nav.fixed {
 }
 
 .about .section-inner {
-  background: url(../images/About_bkg.gif) no-repeat center top/70%;
+  background: url(../images/About_bkg01.gif), url(../images/About_bkg02.gif);
+  background-repeat: no-repeat,no-repeat;
+  background-position: center top,center bottom 8%;
+  background-size: contain;
+  background-size: 70%,70%;
 }
 
 .about .section-inner figure {
@@ -676,7 +683,7 @@ nav.fixed {
   width: 240px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 845px) {
   .about {
     padding-top: 20px;
   }
@@ -687,8 +694,6 @@ nav.fixed {
 
 @media only screen and (max-width: 1100px) {
   .about .section-inner figure {
-    width: 160px;
-    height: 160px;
     margin: 0 auto;
   }
 }
@@ -704,6 +709,7 @@ nav.fixed {
 
 .flow .section-inner {
   background: url(../images/flow_bkg.gif) no-repeat center top/70% content-box;
+  background-size: contain;
 }
 
 .flow .section-inner figure {
@@ -745,7 +751,7 @@ nav.fixed {
   width: 240px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 845px) {
   .flow {
     padding-top: 40px;
   }
@@ -756,8 +762,6 @@ nav.fixed {
 
 @media only screen and (max-width: 1100px) {
   .flow .section-inner figure {
-    width: 160px;
-    height: 160px;
     margin: 0 auto;
   }
 }
@@ -774,6 +778,7 @@ nav.fixed {
 
 .price .section-inner {
   background: url(../images/Price_bkg.gif) no-repeat center top/70% content-box;
+  background-size: contain;
 }
 
 .price .section-inner figure {
@@ -815,7 +820,7 @@ nav.fixed {
   width: 240px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 845px) {
   .price {
     padding-top: 20px;
   }
@@ -839,13 +844,13 @@ nav.fixed {
   transform: translate(-50%, -50%);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 845px) {
   .about-list img {
     width: 70%;
   }
 }
 
-.linkText {
+.link-text {
   text-align: center;
   margin-top: 20px;
   font-weight: bold;
@@ -990,7 +995,7 @@ nav.fixed {
   font-weight: 100;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 845px) {
   .lower .section-inner h2 {
     font-weight: lighter;
   }
@@ -1024,7 +1029,7 @@ nav.fixed {
   margin-top: 16px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 845px) {
   .lower-visual h1 {
     font-size: 22px;
     width: 100%;
@@ -1068,7 +1073,7 @@ footer {
 }
 
 /* レスポンシブ　メニューボタン */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 845px) {
   .btn-menu {
     display: block;
     position: fixed;
@@ -1082,7 +1087,7 @@ footer {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 845px) {
   .btn-menu-lines {
     position: absolute;
     top: 0;
@@ -1171,7 +1176,7 @@ footer {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 845px) {
   .loop_wrap {
     display: flex;
     width: 100vw;
