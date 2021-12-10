@@ -227,6 +227,7 @@ nav {
         padding: 20px 0px;
         position: fixed;
         top: 0;
+        z-index: 2;
         width: 100%;
         background-color: #fff;
         ;
@@ -447,7 +448,7 @@ nav {
         z-index: 1;
         width: 90%;
         >h2 {
-            margin:10px auto 0px;
+            margin: 10px auto 0px;
         }
         >p {
             display: block;
@@ -620,11 +621,11 @@ nav {
     position: relative;
     padding-top: 70px;
     .section-inner {
-        background: url(../images/About_bkg01.gif) ,url(../images/About_bkg02.gif);
-        background-repeat: no-repeat,no-repeat;
-        background-position: center top,center bottom 8%;
+        background: url(../images/About_bkg01.gif), url(../images/About_bkg02.gif);
+        background-repeat: no-repeat, no-repeat;
+        background-position: center top, center bottom 8%;
         background-size: contain;
-        background-size: 70%,70%;
+        background-size: 70%, 70%;
         figure {
             @include figure(#fff)
         }
@@ -671,6 +672,7 @@ nav {
     .section-inner {
         background: url(../images/Flow_bkg.gif) no-repeat center top/70% content-box;
         background-size: contain;
+        padding-bottom: 40px;
         figure {
             @include figure(#fff4ea)
         }
@@ -699,6 +701,7 @@ nav {
         padding-top: 40px;
         .section-inner {
             background: none;
+            padding-bottom: 0px;
         }
     }
     @include tb {
@@ -820,7 +823,7 @@ nav {
         }
     }
     /* 下層_保育園の概要 */
-    .About-gaiyo {
+    .about-gaiyo {
         table tr td:nth-child(1) {
             background-color: #d3efd2;
             padding: 18px;
@@ -839,7 +842,7 @@ nav {
         margin: 20px 0px;
     }
     /* 下層_保育理念・保育方針・保育目標 */
-    .About-hoshin {
+    .about-hoshin {
         dl dt {
             width: 100%;
             margin: 20px 0px 10px;
@@ -862,7 +865,7 @@ nav {
         }
     }
     /* 下層_入園決定までの流れ */
-    .About-flow {
+    .about-flow {
         ul {
             li {
                 margin-top: 20px;
@@ -892,7 +895,7 @@ nav {
         .section-inner h2 {
             font-weight: lighter;
         }
-        .About-gaiyo {
+        .about-gaiyo {
             table tr td:nth-child(1) {
                 width: 100%;
                 padding: 10px 0px;
